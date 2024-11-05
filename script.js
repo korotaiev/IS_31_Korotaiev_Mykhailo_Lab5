@@ -41,7 +41,7 @@ console.log("Filterd array:");
 console.log(filteredNumbers);
 
 // TASK 4
-/*
+
 console.log("************** TASK4 **************");
 const arrayLength = prompt("Введіть кількість елементів у масиві:");
 let userArray = createArray(arrayLength);
@@ -100,7 +100,7 @@ function insertionSort(arr) {
     arr[j + 1] = current;
   }
   return arr;
-} */
+}
 
 // TASK 5
 console.log("************** TASK5 **************");
