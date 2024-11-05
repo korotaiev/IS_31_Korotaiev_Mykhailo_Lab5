@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="script.js"></script>
+    <title>Lab5</title>
+    <style>
+      input {
+        margin-bottom: 15px;
+      }
+      label {
+        font-size: 18px;
+      }
+      button {
+        padding: 12px 16px;
+        font-size: 18px;
+      }
+      .form {
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="font-size: 64px">Lab 5</h1>
+    <section class="form">
+      <form id="registrationForm" onsubmit="return validateForm()">
+        <label>Ім'я користувача*:</label>
+        <input type="text" id="username" required /><br />
+
+        <label>Вік (ціле число)*:</label>
+        <input type="text" id="age" required /><br />
+
+        <label>Зарплата (дійсне число)*:</label>
+        <input type="text" id="salary" required /><br />
+
+        <label>Дата народження (DD.MM.YYYY)*:</label>
+        <input type="text" id="dob" required /><br />
+
+        <label>Пароль*:</label>
+        <input type="password" id="password" required /><br />
+
+        <label>Повторіть пароль*:</label>
+        <input type="password" id="confirmPassword" required /><br />
+
+        <button type="submit">Зареєструватися</button>
+      </form>
+    </section>
+    <p id="errorMessages" style="color: red"></p>
+  </body>
+</html>
