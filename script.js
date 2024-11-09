@@ -57,9 +57,12 @@ console.log("Відсортований масив:", userArray);
 
 function createArray(length) {
   let arr = [];
+
   for (let i = 0; i < length; i++) {
-    arr.push(Math.floor(Math.random() * 100));
+    let pseudoRandomNumber = (i * 37 + 51) % 100;
+    arr.push(pseudoRandomNumber);
   }
+
   return arr;
 }
 function findMaxEven(arr) {
@@ -131,7 +134,7 @@ function validateForm() {
     errorMessages.push("Поле 'Вік' має бути додатним цілим числом.");
   }
 
-  if (salary && (isNaN(salary) || Number(salary) <= 0)) {
+  if (salary && (!isFinite(salary) || Number(salary) <= 0)) {
     errorMessages.push("Поле 'Зарплата' має бути додатним дійсним числом.");
   }
 
