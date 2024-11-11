@@ -59,8 +59,8 @@ function createArray(length) {
   let arr = [];
 
   for (let i = 0; i < length; i++) {
-    let pseudoRandomNumber = (i * 37 + 51) % 100;
-    arr.push(pseudoRandomNumber);
+    let randomNumber = Math.floor(Math.random() * 100);
+    arr.push(randomNumber);
   }
 
   return arr;
